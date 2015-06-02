@@ -1,0 +1,15 @@
+header {
+  left: 1rem;
+  position: absolute;
+  top: 1rem;
+	text-transform: uppercase;
+  z-index: $z-index;
+
+	&.light {
+		color: $black;
+	}
+
+	&.dark {
+		color: $white;
+	}
+}
