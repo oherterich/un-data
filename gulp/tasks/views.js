@@ -6,7 +6,9 @@ gulp.task('views', function() {
   // Get our index.html
   gulp.src('app/index.html')
   // And put it in the dist folder
-  .pipe(gulp.dest('dist/'));
+  .pipe(gulp.dest('dist/'))
+  // And tell the lrserver to refresh
+  .pipe(refresh(lrserver));
 
   //Any other view files from app/views
   gulp.src('./app/views/**/*')

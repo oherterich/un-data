@@ -3,7 +3,13 @@
 	height: 100vh;
   left: 0;
 	opacity: 0.95;
+  overflow: scroll;
   position: absolute;
   top: 0;
-	width: 30%;
+	width: 33%;
+
+  .wrapper {
+    padding: 3rem;
+    width: calc(100% - 6rem);
+  }
 }
